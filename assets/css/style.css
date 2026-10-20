@@ -75,11 +75,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .navbar.scrolled::before { opacity: 1; }
 .navbar.scrolled { border-bottom-color: rgba(255, 255, 255, 0.06); }
-.navbar.scrolled .logo img { height: 32px; }
+.navbar.scrolled .logo img { height: 28px; }
 .nav-inner { position: relative; display: flex; align-items: center; justify-content: space-between; width: 100%; }
 
 .logo { display: flex; align-items: center; }
-.logo img { height: 42px; width: auto; object-fit: contain; transition: height .3s ease; }
+.logo img { height: 34px; width: auto; object-fit: contain; transition: height .3s ease; }
 
 .nav-links {
     display: flex; align-items: center; justify-content: center; gap: 32px;
@@ -486,7 +486,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ═══════════ FOOTER ═══════════ */
 .footer { padding: 80px 0 32px; border-top: 1px solid var(--border); background: #060810; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 60px; }
-.footer .logo img { height: 42px; }
+.footer .logo img { height: 36px; }
+@media (max-width: 600px) { .logo img, .navbar.scrolled .logo img, .footer .logo img { height: 26px; } }
 .footer-tag { color: var(--text-3); font-size: 14px; margin-top: 14px; }
 .footer h5 { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text); margin-bottom: 20px; }
 .footer-grid > div > a { display: block; color: var(--text-2); font-size: 14px; padding: 6px 0; transition: color .2s ease; }

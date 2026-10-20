@@ -16,7 +16,7 @@ for (const entry of await readdir(path.join(root, 'pages'), { withFileTypes: tru
         await cp(path.join(root, 'pages', entry.name), path.join(output, 'pages', entry.name));
     }
 }
-for (const file of ['css/style.css', 'js/main.js', 'images/logo.png']) {
+for (const file of ['css/style.css', 'js/main.js', 'images/logo.png', 'images/logo-wordmark.png']) {
     const destination = path.join(output, 'assets', file);
     await mkdir(path.dirname(destination), { recursive: true });
     await cp(path.join(root, 'assets', file), destination);
