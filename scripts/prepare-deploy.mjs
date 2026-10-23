@@ -28,5 +28,7 @@ await writeFile(path.join(output, '_headers'), `/*
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   X-Robots-Tag: noindex
+/assets/*
+  Cache-Control: public, max-age=86400
 `);
 console.log(`Prepared public files in ${output}`);

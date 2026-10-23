@@ -2,7 +2,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 /* ═══════════ LOADER ═══════════ */
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
-    if (loader) setTimeout(() => loader.classList.add('hide'), 900);
+    if (loader) setTimeout(() => loader.classList.add('hide'), 200);
 });
 
 /* ═══════════ NAVBAR SCROLL + MOBILE MENU ═══════════ */
