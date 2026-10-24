@@ -35,7 +35,7 @@ await writeFile(path.join(output, '_headers'), `/*
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-/assets/*
+/assets/images/*
   Cache-Control: public, max-age=86400
 `);
 console.log(`Prepared public files in ${output}`);
