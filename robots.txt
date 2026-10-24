@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /pages/thank-you.html
+
+Sitemap: https://webnoxhub.com/sitemap.xml

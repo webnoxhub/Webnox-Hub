@@ -10,6 +10,7 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output);
 await cp(path.join(root, 'index.html'), path.join(output, 'index.html'));
 await cp(path.join(root, 'robots.txt'), path.join(output, 'robots.txt'));
+await cp(path.join(root, 'sitemap.xml'), path.join(output, 'sitemap.xml'));
 await mkdir(path.join(output, 'pages'));
 for (const entry of await readdir(path.join(root, 'pages'), { withFileTypes: true })) {
     if (entry.isFile() && entry.name.endsWith('.html')) {
@@ -27,7 +28,6 @@ await writeFile(path.join(output, '_headers'), `/*
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  X-Robots-Tag: noindex
 /assets/*
   Cache-Control: public, max-age=86400
 `);
