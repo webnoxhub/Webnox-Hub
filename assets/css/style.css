@@ -642,3 +642,10 @@ input[type="checkbox"] { width: auto; accent-color: #7c3aed; }
 @media (max-width: 500px) {
     .hero-cta { flex-wrap: wrap; }
 }
+
+/* Pricing: divider and custom card */
+.pricing-divider { display: flex; align-items: center; gap: 20px; max-width: 1080px; margin: 56px auto; color: var(--text-3); text-transform: uppercase; letter-spacing: .12em; font-size: 13px; }
+.pricing-divider::before, .pricing-divider::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+.price-card.custom-card { max-width: 520px; margin: 0 auto; text-align: center; }
+.price-card.custom-card .price { font-size: 30px; margin-bottom: 16px; }
+.custom-note { color: var(--text-2); font-size: 15px; line-height: 1.6; margin-bottom: 28px; }
