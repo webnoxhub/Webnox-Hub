@@ -22,11 +22,13 @@ for (const file of ['css/style.css', 'js/main.js', 'images/logo.png', 'images/lo
     await mkdir(path.dirname(destination), { recursive: true });
     await cp(path.join(root, 'assets', file), destination);
 }
-// Service page images (webp/jpg/png only)
-await mkdir(path.join(output, 'assets', 'images', 'services'), { recursive: true });
-for (const entry of await readdir(path.join(root, 'assets', 'images', 'services'), { withFileTypes: true })) {
-    if (entry.isFile() && /\.(webp|jpe?g|png)$/i.test(entry.name)) {
-        await cp(path.join(root, 'assets', 'images', 'services', entry.name), path.join(output, 'assets', 'images', 'services', entry.name));
+// Service and work page images (webp/jpg/png only)
+for (const folder of ['services', 'work']) {
+    await mkdir(path.join(output, 'assets', 'images', folder), { recursive: true });
+    for (const entry of await readdir(path.join(root, 'assets', 'images', folder), { withFileTypes: true })) {
+        if (entry.isFile() && /\.(webp|jpe?g|png)$/i.test(entry.name)) {
+            await cp(path.join(root, 'assets', 'images', folder, entry.name), path.join(output, 'assets', 'images', folder, entry.name));
+        }
     }
 }
 // A manual upload does not read the source netlify.toml: include equivalent headers.
