@@ -271,3 +271,32 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         }
     });
 });
+
+/* ═══════════ HERO PROCESS ANIMATION ═══════════ */
+(function () {
+    const win = document.getElementById('hvWindow');
+    if (!win) return;
+    const steps = win.parentElement.querySelectorAll('.hv-steps li');
+    const cap = document.getElementById('hvCap');
+    const title = document.getElementById('hvTitle');
+    const text = [
+        ['webnoxhub / discuss', 'We start by listening to your goals.'],
+        ['webnoxhub / design', 'You see the layout before we build it.'],
+        ['webnoxhub / build', 'We build web apps and SaaS products around your workflow.'],
+        ['webnoxhub / launch', 'We launch it properly and stay available after.']
+    ];
+    function set(n) {
+        win.dataset.step = String(n);
+        steps.forEach((s, k) => s.classList.toggle('on', k === n - 1));
+        if (cap) cap.textContent = text[n - 1][1];
+        if (title) title.textContent = text[n - 1][0];
+    }
+    if (reducedMotion.matches) { set(3); return; }
+    let i = 1;
+    set(i);
+    setInterval(function () {
+        if (document.hidden) return;
+        i = i % 4 + 1;
+        set(i);
+    }, 6000);
+})();
