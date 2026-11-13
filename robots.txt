@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /pages/thank-you.html
+# Thank-you uses a noindex meta tag; allow crawlers to read it.
 
 Sitemap: https://webnoxhub.com/sitemap.xml
