@@ -177,9 +177,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ═══════════ PAGE HERO (Inner pages) ═══════════ */
 .page-hero {
     position: relative;
-    min-height: 100vh;
+    min-height: auto;
     display: flex; flex-direction: column; justify-content: center;
-    padding: 140px 0 80px;
+    padding: 170px 0 70px;
     text-align: center;
     overflow: hidden;
 }
@@ -505,7 +505,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ═══════════ RESPONSIVE ═══════════ */
 @media (max-width: 900px) {
     .section { padding: 80px 0; }
-    .page-hero { padding: 160px 0 80px; }
+    .page-hero { padding: 140px 0 56px; }
 
             .nav-links {
         position: fixed; top: 0; left: 0; right: 0; bottom: 0;
