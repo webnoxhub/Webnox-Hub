@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261024" />
+<link rel="stylesheet" href="../assets/css/style.css?v=20261115-8" />
 <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon.png" />
 <noscript><style>.loader{display:none!important}[data-anim]{opacity:1!important;transform:none!important}@media(max-width:900px){.navbar{position:relative;height:auto}.nav-inner{flex-direction:column}.nav-links{position:static;height:auto;clip-path:none;visibility:visible;pointer-events:auto;padding:20px;overflow:visible}.nav-links a,.nav-links .nav-cta{opacity:1;transform:none}.hamburger{display:none}}</style></noscript>
 </head>
@@ -39,7 +39,7 @@
             <a href="process.html" class="active">Process</a>
             <a href="pricing.html">Pricing</a>
             <a href="about.html">About</a>
-            <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+            <a href="https://calendar.app.google/YQGjRgXyBe3XkkkY7" class="btn btn-primary nav-cta">Get Audit</a>
         </nav>
         <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -48,10 +48,25 @@
 <section class="page-hero">
     <canvas class="network-canvas"></canvas>
     <div class="glow glow-1"></div>
-    <div class="container">
-        <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Process</span></div>
-        <h1 data-anim>How We <span class="gradient-text">Work</span></h1>
-        <p class="page-sub" data-anim>A clear, proven process — from idea to launch.</p>
+    <div class="container page-hero-layout">
+        <div class="page-hero-copy">
+            <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Process</span></div>
+            <h1 data-anim>How We <span class="gradient-text">Work</span></h1>
+            <p class="page-sub" data-anim>A clear, proven process — from idea to launch.</p>
+        </div>
+        <figure class="page-preview page-preview--flow" role="img" aria-label="Four milestones from discovery through launch">
+            <div class="preview-chrome" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="preview-content" aria-hidden="true">
+                <span class="preview-kicker">From idea to launch</span>
+                <strong>Project delivery</strong>
+                <ul class="preview-items">
+                    <li>Discover</li>
+                    <li>Design</li>
+                    <li>Build</li>
+                    <li>Launch</li>
+                </ul>
+            </div>
+        </figure>
     </div>
 </section>
 
@@ -138,16 +153,56 @@
     </div>
 </section>
 
+    <section class="section service-depth" aria-label="What you review at each step">
+        <div class="container story-layout">
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>What you review at each step</h2>
+                    <p>Discovery turns your goal into pages, workflows and a list of open decisions. For a booking website, this might include the services people can book, which calendar they use and who needs to receive confirmations. Agree which parts of the site need your review and what a successful test should look like early in the project.</p>
+                    <p>During design, check an important page on phone and desktop before the rest of the layouts are built. During development, test the same path with representative content. Before launch, confirm who owns the domain and where form or checkout completions are delivered.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/process-1.svg" alt="Project review and approval stages: Confirm scope, Review design, Test launch." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+<section class="section faq-section" aria-labelledby="faq-heading">
+    <div class="container">
+        <h2 id="faq-heading">FAQ</h2>
+        <div class="faq-list">
+            <details>
+                <summary>What happens after the first discussion?</summary>
+                <p>We review your goals and requirements before proposing a scope and quote.</p>
+            </details>
+            <details>
+                <summary>Can I review the design before development?</summary>
+                <p>Yes. We use the design stage to review layouts and agree on the direction before development starts.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container footer-grid">
         <div><a href="../index.html" class="logo"><img src="../assets/images/logo-wordmark.png" alt="Webnox Hub" /></a><p class="footer-tag">Build. Automate. Scale.</p></div>
-        <div><h5>Services</h5><a href="services.html">Web Development</a><a href="services.html">SaaS</a><a href="services.html">Automation</a><a href="services.html">Social Media</a></div>
-        <div><h5>Company</h5><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></div>
+        <div>
+            <h5>Services</h5>
+            <a href="website-development.html">Website Development</a>
+            <a href="ecommerce-development.html">Ecommerce Development</a>
+            <a href="paid-ads.html">Paid Ads Management</a>
+            <a href="saas-products.html">SaaS Products</a>
+            <a href="business-automation.html">Business Automation</a>
+        </div>
+        <div><h5>Company</h5><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+        </div>
         <div><h5>Connect</h5><a href="mailto:webnoxhub@gmail.com">webnoxhub@gmail.com</a><a href="tel:+923181245603">+92 318 124 5603</a><a href="https://wa.me/923181245603">WhatsApp</a><p class="footer-location">Karachi, Pakistan</p></div>
     </div>
     <div class="container footer-bottom"><p>© 2026 Webnox Hub. All rights reserved.</p></div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261024"></script>
+<script src="../assets/js/main.js?v=20261115-2"></script>
 </body>
 </html>

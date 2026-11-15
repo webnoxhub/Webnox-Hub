@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261024" />
+<link rel="stylesheet" href="../assets/css/style.css?v=20261115-8" />
 <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon.png" />
 <meta name="robots" content="noindex">
 <noscript><style>.loader{display:none!important}[data-anim]{opacity:1!important;transform:none!important}@media(max-width:900px){.navbar{position:relative;height:auto}.nav-inner{flex-direction:column}.nav-links{position:static;height:auto;clip-path:none;visibility:visible;pointer-events:auto;padding:20px;overflow:visible}.nav-links a,.nav-links .nav-cta{opacity:1;transform:none}.hamburger{display:none}}</style></noscript>
@@ -24,24 +24,86 @@
             <a href="process.html">Process</a>
             <a href="pricing.html">Pricing</a>
             <a href="about.html">About</a>
-            <a href="contact.html" class="btn btn-primary nav-cta active">Get Started</a>
+            <a href="https://calendar.app.google/YQGjRgXyBe3XkkkY7" class="btn btn-primary nav-cta">Get Audit</a>
         </nav>
         <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
 </header>
 
-<main class="section" style="padding-top:160px;min-height:65vh"><div class="container"><h1>Thank you for your inquiry</h1><p>If you reached this page after submitting the form, the hosting provider accepted your submission for processing. Email delivery is separate.</p><a class="btn btn-primary" href="../index.html">Back to Home</a></div></main>
+<main>
+    <header class="page-hero">
+        <div class="container page-hero-layout">
+            <div class="page-hero-copy">
+                <h1>Thank you for your inquiry</h1>
+                <p class="page-sub">If you reached this page after submitting the form, the hosting provider accepted your submission for processing. Email delivery is separate.</p>
+                <a class="btn btn-primary" href="../index.html">Back to Home</a>
+            </div>
+            <figure class="page-preview page-preview--receipt" role="img" aria-label="A confirmation illustrating how to follow up on an inquiry">
+                <div class="preview-chrome" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="preview-content" aria-hidden="true">
+                    <span class="preview-kicker">Next steps</span>
+                    <strong>Inquiry received</strong>
+                    <ul class="preview-items">
+                        <li>Keep a copy of your brief</li>
+                        <li>Use Contact to add details</li>
+                    </ul>
+                </div>
+            </figure>
+        </div>
+    </header>
+
+    <section class="section service-depth" aria-label="What you can prepare for follow-up">
+        <div class="container story-layout">
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>What you can prepare for follow-up</h2>
+                    <p>Keep a copy of the website URL and the main goal you shared in your inquiry. If you have a sample page, project outline or preferred meeting time, keep that ready so the next discussion can focus on the work you want done.</p>
+                    <p>If you need to correct or add something, use the Contact page and mention the name or email used in your original inquiry. You can include a public link or a short description of what changed.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/thank-you-1.svg" alt="Project inquiry follow-up steps: Save brief, Collect examples, Add details if needed." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+<section class="section faq-section" aria-labelledby="faq-heading">
+    <div class="container">
+        <h2 id="faq-heading">FAQ</h2>
+        <div class="faq-list">
+            <details>
+                <summary>Has my inquiry been accepted?</summary>
+                <p>If the form sent you here after submission, the hosting provider accepted the inquiry for processing.</p>
+            </details>
+            <details>
+                <summary>How can I follow up?</summary>
+                <p>If you need to add something, use the contact details on the <a href="contact.html">Contact page</a> and mention your original inquiry.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+</main>
 <footer class="footer">
     <div class="container footer-grid">
         <div><a href="../index.html" class="logo"><img src="../assets/images/logo-wordmark.png" alt="Webnox Hub" /></a><p class="footer-tag">Build. Automate. Scale.</p></div>
-        <div><h5>Services</h5><a href="services.html">Web Development</a><a href="services.html">SaaS</a><a href="services.html">Automation</a><a href="services.html">Social Media</a></div>
-        <div><h5>Company</h5><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></div>
+        <div>
+            <h5>Services</h5>
+            <a href="website-development.html">Website Development</a>
+            <a href="ecommerce-development.html">Ecommerce Development</a>
+            <a href="paid-ads.html">Paid Ads Management</a>
+            <a href="saas-products.html">SaaS Products</a>
+            <a href="business-automation.html">Business Automation</a>
+        </div>
+        <div><h5>Company</h5><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+        </div>
         <div><h5>Connect</h5><a href="mailto:webnoxhub@gmail.com">webnoxhub@gmail.com</a><a href="tel:+923181245603">+92 318 124 5603</a><a href="https://wa.me/923181245603">WhatsApp</a><p class="footer-location">Karachi, Pakistan</p></div>
     </div>
     <div class="container footer-bottom"><p>© 2026 Webnox Hub. All rights reserved.</p>
     </div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261024"></script>
+<script src="../assets/js/main.js?v=20261115-2"></script>
 </body>
 </html>

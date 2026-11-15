@@ -22,11 +22,11 @@ for (const file of ['css/style.css', 'js/main.js', 'images/logo.png', 'images/lo
     await mkdir(path.dirname(destination), { recursive: true });
     await cp(path.join(root, 'assets', file), destination);
 }
-// Service and work page images (webp/jpg/png only)
-for (const folder of ['services', 'work']) {
+// Publish only supported image assets from these directories.
+for (const folder of ['services', 'work', 'topics']) {
     await mkdir(path.join(output, 'assets', 'images', folder), { recursive: true });
     for (const entry of await readdir(path.join(root, 'assets', 'images', folder), { withFileTypes: true })) {
-        if (entry.isFile() && /\.(webp|jpe?g|png)$/i.test(entry.name)) {
+        if (entry.isFile() && /\.(webp|jpe?g|png|svg)$/i.test(entry.name)) {
             await cp(path.join(root, 'assets', 'images', folder, entry.name), path.join(output, 'assets', 'images', folder, entry.name));
         }
     }

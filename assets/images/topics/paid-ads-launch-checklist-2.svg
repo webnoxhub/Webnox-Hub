@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 296" font-family="system-ui, sans-serif">
+  <defs>
+    <linearGradient id="surface" x2="100%" y2="100%"><stop stop-color="#0e1c31"/><stop offset="1" stop-color="#1a1a36"/></linearGradient>
+    <linearGradient id="accent" x2="100%" y2="100%"><stop stop-color="#c1adff"/><stop offset="1" stop-color="#8474f3"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#7187b1" stroke-opacity=".14"/></pattern>
+  </defs>
+  <rect width="520" height="296" rx="20" fill="url(#surface)"/>
+  <rect x="16" y="16" width="488" height="264" rx="15" fill="url(#grid)" stroke="#344866"/>
+  <path d="M28 78h464" stroke="#344866"/>
+  <rect x="38" y="44" width="4" height="18" rx="2" fill="url(#accent)"/>
+  <text x="53" y="58" fill="#eef6ff" font-size="19" font-weight="650">First campaign review</text>
+  <path d="M70 110v100h379" fill="none" stroke="#344766" stroke-width="2"/>
+  <rect x="86" y="120" width="52" height="90" rx="6" fill="url(#accent)"/>
+  <text x="112" y="238" fill="#bbcee7" text-anchor="middle" font-size="14">Traffic</text>
+  <rect x="234" y="141" width="52" height="69" rx="6" fill="url(#accent)"/>
+  <text x="260" y="238" fill="#bbcee7" text-anchor="middle" font-size="14">Response</text>
+  <rect x="382" y="162" width="52" height="48" rx="6" fill="url(#accent)"/>
+  <text x="408" y="238" fill="#bbcee7" text-anchor="middle" font-size="14">Lead quality</text>
+</svg>

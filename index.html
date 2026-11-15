@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=20261024" />
+<link rel="stylesheet" href="assets/css/style.css?v=20261115-8" />
 <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon.png" />
 <noscript><style>.loader{display:none!important}[data-anim]{opacity:1!important;transform:none!important}@media(max-width:900px){.navbar{position:relative;height:auto}.nav-inner{flex-direction:column}.nav-links{position:static;height:auto;clip-path:none;visibility:visible;pointer-events:auto;padding:20px;overflow:visible}.nav-links a,.nav-links .nav-cta{opacity:1;transform:none}.hamburger{display:none}}</style></noscript>
 </head>
@@ -50,7 +50,7 @@
             <a href="pages/process.html">Process</a>
             <a href="pages/pricing.html">Pricing</a>
             <a href="pages/about.html">About</a>
-            <a href="pages/contact.html" class="btn btn-primary nav-cta">Get Started</a>
+            <a href="https://calendar.app.google/YQGjRgXyBe3XkkkY7" class="btn btn-primary nav-cta">Get Audit</a>
         </nav>
         <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
             <span></span><span></span><span></span>
@@ -67,14 +67,14 @@
     <div class="container hero-content hero-split">
         <div class="hero-copy">
         <div class="badge" data-anim>
-            <span class="badge-dot"></span> Websites. Automation. Digital solutions.
+            <span class="badge-dot"></span> Websites · Ecommerce · Ads · SaaS
         </div>
         <h1 data-anim>
             Professional Websites<br>
             <span class="gradient-text">That Help Businesses Grow.</span>
         </h1>
         <p class="hero-sub" data-anim>
-            Full-stack digital agency for web development, SaaS & automation that scales your business.
+            We build business websites, ecommerce stores and SaaS products, and help you reach customers with paid ads.
         </p>
         <div class="hero-cta" data-anim>
             <a href="pages/contact.html" class="btn btn-primary">Discuss Your Project</a>
@@ -160,66 +160,83 @@
 </section>
 
 <!-- SERVICES PREVIEW -->
-<section class="section">
+<section class="section" aria-label="What we do">
     <div class="container">
-        <div class="section-head" data-anim>
-            <span class="label">What We Do</span>
-            <h2>Services Built to <span class="gradient-text">Scale</span></h2>
-            <p>Everything your business needs — under one roof.</p>
-        </div>
-
-        <div class="services-grid">
-            <div class="service-card" data-anim>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                        <polyline points="16 18 22 12 16 6"/>
-                        <polyline points="8 6 2 12 8 18"/>
+        <div class="section-head"><h2>What We Do</h2></div>
+        <div class="service-catalog">
+            <article class="service-tile" data-anim>
+                <div class="card-illustration card-illustration--browser" aria-hidden="true">
+                    <svg class="card-icon card-icon--browser" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                        <rect x="8" y="11" width="48" height="42" rx="7" /><path d="M8 22h48M15 17h1m5 0h1m5 0h1" /><path class="icon-motion" d="m23 31-7 6 7 6m18-12 7 6-7 6m-6-14-6 17" />
                     </svg>
                 </div>
-                <h3>Web Development</h3>
-                <p>Blazing-fast, pixel-perfect websites & ecommerce stores built on modern stacks.</p>
-                <a href="pages/website-development.html" class="card-link">Explore website development →</a>
-            </div>
-
-            <div class="service-card" data-anim>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                        <rect x="3" y="3" width="7" height="7" rx="1"/>
-                        <rect x="14" y="3" width="7" height="7" rx="1"/>
-                        <rect x="3" y="14" width="7" height="7" rx="1"/>
-                        <rect x="14" y="14" width="7" height="7" rx="1"/>
+                <div class="service-tile-body">
+                    <h3>Website Development</h3>
+                    <p>Business websites and landing pages that explain your offer and give visitors a clear next step.</p>
+                    <a href="pages/website-development.html" class="card-link" aria-label="Learn more about Website Development">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+            <article class="service-tile" data-anim>
+                <div class="card-illustration card-illustration--store" aria-hidden="true">
+                    <svg class="card-icon card-icon--store" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                        <path d="M11 29v24h42V29M9 14h46l3 10a6 6 0 0 1-12 0 7 7 0 0 1-14 0 7 7 0 0 1-14 0 6 6 0 0 1-12 0z" /><path d="M20 53V37h10v16" /><path class="icon-motion" d="M36 36h10v10H36zM39 36v-2a2 2 0 0 1 4 0v2" />
                     </svg>
                 </div>
-                <h3>SaaS Development</h3>
-                <p>From MVP to multi-tenant platforms with auth, payments & dashboards.</p>
-                <a href="pages/services.html" class="card-link">Learn more →</a>
-            </div>
-
-            <div class="service-card" data-anim>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                        <circle cx="12" cy="12" r="3"/>
-                        <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
+                <div class="service-tile-body">
+                    <h3>Ecommerce Development</h3>
+                    <p>Shopify and WooCommerce stores with organized catalogs, clear product pages and checkout planning.</p>
+                    <a href="pages/ecommerce-development.html" class="card-link" aria-label="Learn more about Ecommerce Development">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+            <article class="service-tile" data-anim>
+                <div class="card-illustration card-illustration--chart" aria-hidden="true">
+                    <svg class="card-icon card-icon--chart" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                        <path d="M11 12v41h44" /><path d="m17 30 11-7 10 3 13-13m-7 0h7v7" /><g class="icon-motion"><rect x="18" y="39" width="6" height="14" rx="2" /><rect x="31" y="34" width="6" height="19" rx="2" /><rect x="44" y="27" width="6" height="26" rx="2" /></g>
                     </svg>
                 </div>
-                <h3>Automation</h3>
-                <p>AI integrations, WhatsApp bots, CRM workflows and custom scripts for routine business tasks.</p>
-                <a href="pages/services.html" class="card-link">Learn more →</a>
-            </div>
-
-            <div class="service-card" data-anim>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                        <path d="M18 8a3 3 0 1 0-3-3"/>
-                        <path d="M6 16a3 3 0 1 0 3 3"/>
-                        <path d="M18 8v8a3 3 0 0 1-3 3H9"/>
-                        <circle cx="18" cy="18" r="2"/>
+                <div class="service-tile-body">
+                    <h3>Paid Ads Management</h3>
+                    <p>Google and Meta campaigns built around clear goals, relevant landing pages and conversion tracking.</p>
+                    <a href="pages/paid-ads.html" class="card-link" aria-label="Learn more about Paid Ads Management">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+            <article class="service-tile" data-anim>
+                <div class="card-illustration card-illustration--dash" aria-hidden="true">
+                    <svg class="card-icon card-icon--dash" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                        <rect x="8" y="10" width="48" height="44" rx="7" /><path d="M20 10v44m6-33h21m-21 7h14M13 20h2m-2 7h2m-2 7h2" /><g class="icon-motion"><rect x="26" y="35" width="9" height="11" rx="2" /><rect x="40" y="32" width="9" height="14" rx="2" /></g>
                     </svg>
                 </div>
-                <h3>Social Media</h3>
-                <p>Content, reels, ads & full ecommerce handling to grow your brand.</p>
-                <a href="pages/services.html" class="card-link">Learn more →</a>
-            </div>
+                <div class="service-tile-body">
+                    <h3>SaaS Products</h3>
+                    <p>Scope a SaaS MVP around one useful workflow, then plan accounts, dashboards and billing around it.</p>
+                    <a href="pages/saas-products.html" class="card-link" aria-label="Learn more about SaaS Products">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+            <article class="service-tile" data-anim>
+                <div class="card-illustration card-illustration--flow" aria-hidden="true">
+                    <svg class="card-icon card-icon--flow" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                        <path d="M16 29h11m10 0h11M32 34v9" /><rect x="7" y="24" width="9" height="10" rx="2" /><rect x="27" y="24" width="10" height="10" rx="2" /><rect x="48" y="24" width="9" height="10" rx="2" /><rect x="27" y="43" width="10" height="10" rx="2" /><path class="icon-motion" d="M16 29h11m10 0h11M32 34v9" />
+                    </svg>
+                </div>
+                <div class="service-tile-body">
+                    <h3>Business Automation</h3>
+                    <p>Connect forms, CRMs and notifications so routine handoffs take less manual work.</p>
+                    <a href="pages/business-automation.html" class="card-link" aria-label="Learn more about Business Automation">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+            <article class="service-tile" data-anim>
+                <div class="card-illustration card-illustration--seo" aria-hidden="true">
+                    <svg class="card-icon card-icon--seo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                        <path d="M36 51H13a5 5 0 0 1-5-5V17a5 5 0 0 1 5-5h38a5 5 0 0 1 5 5v11M8 23h48m-41-5h1m5 0h1m5 0h1m-12 14h15m-15 8h10" />
+                        <g class="icon-motion"><circle cx="43" cy="39" r="9" /><path d="m50 46 8 8" /></g>
+                    </svg>
+                </div>
+                <div class="service-tile-body">
+                    <h3>SEO &amp; Website Optimization</h3>
+                    <p>Fix crawl issues, refine page content and improve mobile usability so visitors can find and use your site.</p>
+                    <a href="pages/seo-optimization.html" class="card-link" aria-label="Learn more about SEO and Website Optimization">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
         </div>
     </div>
 </section>
@@ -242,6 +259,37 @@
 </section>
 
 <!-- FOOTER -->
+    <section class="section service-depth" aria-label="Start with the outcome you want">
+        <div class="container story-layout">
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>Start with the outcome you want</h2>
+                    <p>If the business needs more relevant quote requests, begin with a site that explains what you offer, who you help and how a customer can get in touch. If customers already know what they need and can purchase directly, start by mapping the product catalog, checkout and delivery experience. This gives the website a job you can test before you invest in more traffic.</p>
+                    <p>Once the path works, choose where to improve it. Search visibility can help customers find the right service page. Paid campaigns can send a specific audience to a relevant offer. A product or automation project makes sense when the work involves a repeatable task that needs its own workflow.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="assets/images/topics/index-1.svg" alt="Webnox project starting points: Website, Acquisition, Workflow." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+<section class="section faq-section" aria-labelledby="faq-heading">
+    <div class="container">
+        <h2 id="faq-heading">FAQ</h2>
+        <div class="faq-list">
+            <details>
+                <summary>Can you help with both a website and ads?</summary>
+                <p>Yes. We can scope a <a href="pages/website-development.html">business website</a> or landing page together with a <a href="pages/paid-ads.html">paid ads plan</a>.</p>
+            </details>
+            <details>
+                <summary>Do you work with businesses outside Pakistan?</summary>
+                <p>Yes. Webnox Hub works from Karachi with businesses in Pakistan and abroad. Share your location and preferred meeting times when you get in touch.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container footer-grid">
         <div>
@@ -254,9 +302,11 @@
             <a href="pages/shopify-development.html">Shopify Development</a>
             <a href="pages/wordpress-development.html">WordPress Development</a>
             <a href="pages/small-business-website-checklist.html">Website Planning Checklist</a>
-            <a href="pages/services.html">SaaS</a>
-            <a href="pages/services.html">Automation</a>
-            <a href="pages/services.html">Social Media</a>
+            <a href="pages/ecommerce-development.html">Ecommerce Development</a>
+            <a href="pages/paid-ads.html">Paid Ads Management</a>
+            <a href="pages/saas-products.html">SaaS Products</a>
+            <a href="pages/business-automation.html">Business Automation</a>
+            <a href="pages/seo-optimization.html">SEO &amp; Website Optimization</a>
         </div>
         <div>
             <h5>Company</h5>
@@ -264,6 +314,7 @@
             <a href="pages/process.html">Process</a>
             <a href="pages/pricing.html">Pricing</a>
             <a href="pages/about.html">About</a>
+            <a href="pages/blog.html">Blog</a>
         </div>
         <div>
             <h5>Connect</h5><a href="mailto:webnoxhub@gmail.com">webnoxhub@gmail.com</a><a href="tel:+923181245603">+92 318 124 5603</a><a href="https://wa.me/923181245603">WhatsApp</a><p class="footer-location">Karachi, Pakistan</p></div>
@@ -273,6 +324,6 @@
     </div>
 </footer>
 
-<script src="assets/js/main.js?v=20261024"></script>
+<script src="assets/js/main.js?v=20261115-2"></script>
 </body>
 </html>

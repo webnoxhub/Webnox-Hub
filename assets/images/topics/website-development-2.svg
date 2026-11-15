@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 296" font-family="system-ui, sans-serif">
+  <defs>
+    <linearGradient id="surface" x2="100%" y2="100%"><stop stop-color="#0e1c31"/><stop offset="1" stop-color="#1a1a36"/></linearGradient>
+    <linearGradient id="accent" x2="100%" y2="100%"><stop stop-color="#8ad1fe"/><stop offset="1" stop-color="#8474f3"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#7187b1" stroke-opacity=".14"/></pattern>
+  </defs>
+  <rect width="520" height="296" rx="20" fill="url(#surface)"/>
+  <rect x="16" y="16" width="488" height="264" rx="15" fill="url(#grid)" stroke="#344866"/>
+  <path d="M28 78h464" stroke="#344866"/>
+  <rect x="38" y="44" width="4" height="18" rx="2" fill="url(#accent)"/>
+  <text x="53" y="58" fill="#eef6ff" font-size="19" font-weight="650">Business website structure</text>
+  <rect x="60" y="97" width="400" height="150" rx="12" fill="#121f36" stroke="#344c73"/>
+  <path d="M60 125h400m-276 0v122" fill="none" stroke="#344c73"/>
+  <circle cx="75" cy="111" r="3" fill="#8ad1fe"/><circle cx="86" cy="111" r="3" fill="#54698a"/><circle cx="97" cy="111" r="3" fill="#54698a"/>
+  <text x="76" y="151" fill="#d6e6fa" font-size="14">Services</text>
+  <path d="M77 163h70m-70 13h49m-49 13h62" fill="none" stroke="#385276" stroke-width="4" stroke-linecap="round"/>
+  <rect x="201" y="142" width="240" height="44" rx="7" fill="url(#accent)" fill-opacity=".26"/>
+  <text x="216" y="169" fill="#edf5ff" font-size="15">Proof</text>
+  <rect x="201" y="198" width="155" height="31" rx="7" fill="#263952"/>
+  <text x="215" y="219" fill="#d6e6fa" font-size="14">Contact</text>
+</svg>

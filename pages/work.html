@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261024" />
+<link rel="stylesheet" href="../assets/css/style.css?v=20261115-8" />
 <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon.png" />
 <noscript><style>.loader{display:none!important}[data-anim]{opacity:1!important;transform:none!important}@media(max-width:900px){.navbar{position:relative;height:auto}.nav-inner{flex-direction:column}.nav-links{position:static;height:auto;clip-path:none;visibility:visible;pointer-events:auto;padding:20px;overflow:visible}.nav-links a,.nav-links .nav-cta{opacity:1;transform:none}.hamburger{display:none}}</style></noscript>
 </head>
@@ -39,7 +39,7 @@
             <a href="process.html">Process</a>
             <a href="pricing.html">Pricing</a>
             <a href="about.html">About</a>
-            <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+            <a href="https://calendar.app.google/YQGjRgXyBe3XkkkY7" class="btn btn-primary nav-cta">Get Audit</a>
         </nav>
         <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -48,10 +48,24 @@
 <section class="page-hero">
     <canvas class="network-canvas"></canvas>
     <div class="glow glow-2"></div>
-    <div class="container">
-        <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Work</span></div>
-        <h1 data-anim>Project <span class="gradient-text">Possibilities</span></h1>
-        <p class="page-sub" data-anim>Illustrative project types, not verified client case studies.</p>
+    <div class="container page-hero-layout">
+        <div class="page-hero-copy">
+            <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Work</span></div>
+            <h1 data-anim>Project <span class="gradient-text">Possibilities</span></h1>
+            <p class="page-sub" data-anim>Illustrative project types, not verified client case studies.</p>
+        </div>
+        <figure class="page-preview page-preview--library" role="img" aria-label="A gallery of example storefront, dashboard and website layouts">
+            <div class="preview-chrome" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="preview-content" aria-hidden="true">
+                <span class="preview-kicker">Illustrative examples</span>
+                <strong>Project gallery</strong>
+                <ul class="preview-items">
+                    <li>Storefront</li>
+                    <li>SaaS dashboard</li>
+                    <li>Business website</li>
+                </ul>
+            </div>
+        </figure>
     </div>
 </section>
 
@@ -67,27 +81,69 @@
 
         <div class="work-grid">
             <div class="work-card" data-cat="ecommerce" data-anim>
-                <div class="work-thumb has-img thumb-1"><img src="../assets/images/work/fashion-store-redesign.webp" alt="Illustration of an online fashion store on laptop and phone" width="1200" height="750" decoding="async" /><span class="work-tag">Ecommerce</span></div>
+                <div class="work-thumb">
+                    <div class="card-illustration card-illustration--bag" aria-hidden="true">
+                        <svg class="card-icon card-icon--bag" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                            <path d="M12 23h40l4 29H8z" /><path class="icon-motion" d="M21 28V19a11 11 0 0 1 22 0v9" /><path d="m28 37 4 4 5-6" />
+                        </svg>
+                    </div>
+                    <span class="work-tag">Ecommerce</span>
+                </div>
                 <div class="work-info"><h4>Fashion Store Redesign</h4><p>Example scope: storefront and checkout experience</p></div>
             </div>
             <div class="work-card" data-cat="saas" data-anim>
-                <div class="work-thumb has-img thumb-2"><img src="../assets/images/work/invoice-automation-tool.webp" alt="Illustration of an invoicing dashboard with billing and reports" width="1200" height="750" decoding="async" /><span class="work-tag">SaaS</span></div>
+                <div class="work-thumb">
+                    <div class="card-illustration card-illustration--invoice" aria-hidden="true">
+                        <svg class="card-icon card-icon--invoice" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                            <path d="M16 8h32v48l-5-4-5 4-6-4-6 4-5-4-5 4zM22 19h20m-20 9h20m-20 9h10" /><path class="icon-motion" d="m35 41 4 4 7-8" />
+                        </svg>
+                    </div>
+                    <span class="work-tag">SaaS</span>
+                </div>
                 <div class="work-info"><h4>Invoice Automation Tool</h4><p>Multi-tenant SaaS with Stripe billing</p></div>
             </div>
             <div class="work-card" data-cat="automation" data-anim>
-                <div class="work-thumb has-img thumb-3"><img src="../assets/images/work/whatsapp-crm-bot.webp" alt="Illustration of a WhatsApp CRM bot with chat flow and contact pipeline" width="1200" height="750" decoding="async" /><span class="work-tag">Automation</span></div>
+                <div class="work-thumb">
+                    <div class="card-illustration card-illustration--chat" aria-hidden="true">
+                        <svg class="card-icon card-icon--chat" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                            <path d="M10 14h34a5 5 0 0 1 5 5v15a5 5 0 0 1-5 5H22l-9 7v-7h-3a5 5 0 0 1-5-5V19a5 5 0 0 1 5-5z" /><path d="M49 26h5a5 5 0 0 1 5 5v13a5 5 0 0 1-5 5h-2v5l-7-5H31a5 5 0 0 1-5-5" /><path class="icon-motion" d="M16 26h1m8 0h1m8 0h1" />
+                        </svg>
+                    </div>
+                    <span class="work-tag">Automation</span>
+                </div>
                 <div class="work-info"><h4>WhatsApp CRM Bot</h4><p>Example scope: inquiry routing and follow-up</p></div>
             </div>
             <div class="work-card" data-cat="web" data-anim>
-                <div class="work-thumb has-img thumb-4"><img src="../assets/images/work/real-estate-portal.webp" alt="Illustration of a property listings portal with search and map" width="1200" height="750" loading="lazy" decoding="async" /><span class="work-tag">Web Dev</span></div>
+                <div class="work-thumb">
+                    <div class="card-illustration card-illustration--map" aria-hidden="true">
+                        <svg class="card-icon card-icon--map" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                            <path d="m8 22 15-6 18 7 15-7v33l-15 7-18-7-15 6zM23 16v33m18-26v33" /><path class="icon-motion" d="M46 17c0 6-8 14-8 14s-8-8-8-14a8 8 0 1 1 16 0z" /><circle cx="38" cy="17" r="2" />
+                        </svg>
+                    </div>
+                    <span class="work-tag">Web Dev</span>
+                </div>
                 <div class="work-info"><h4>Real Estate Portal</h4><p>Example scope: property listings and search</p></div>
             </div>
             <div class="work-card" data-cat="web" data-anim>
-                <div class="work-thumb has-img thumb-1"><img src="../assets/images/work/clinic-booking-site.webp" alt="Illustration of a clinic appointment booking website on laptop and phone" width="1200" height="750" loading="lazy" decoding="async" /><span class="work-tag">Web Dev</span></div>
+                <div class="work-thumb">
+                    <div class="card-illustration card-illustration--calendar" aria-hidden="true">
+                        <svg class="card-icon card-icon--calendar" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                            <rect x="10" y="15" width="44" height="39" rx="7" /><path d="M10 25h44M20 10v10m24-10v10M18 34h5m-5 9h5m8-9h5" /><path class="icon-motion" d="m34 43 5 5 9-10" />
+                        </svg>
+                    </div>
+                    <span class="work-tag">Web Dev</span>
+                </div>
                 <div class="work-info"><h4>Clinic Booking Site</h4><p>Online appointment system + reminders</p></div>
             </div>
             <div class="work-card" data-cat="ecommerce" data-anim>
-                <div class="work-thumb has-img thumb-3"><img src="../assets/images/work/restaurant-delivery-store.webp" alt="Illustration of a restaurant online ordering store with delivery" width="1200" height="750" loading="lazy" decoding="async" /><span class="work-tag">Ecommerce</span></div>
+                <div class="work-thumb">
+                    <div class="card-illustration card-illustration--delivery" aria-hidden="true">
+                        <svg class="card-icon card-icon--delivery" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                            <path d="M7 18h31v27H7zm31 9h11l8 9v9H38z" /><circle cx="17" cy="46" r="5" /><circle cx="47" cy="46" r="5" /><path class="icon-motion" d="M6 28h16M3 35h16" />
+                        </svg>
+                    </div>
+                    <span class="work-tag">Ecommerce</span>
+                </div>
                 <div class="work-info"><h4>Restaurant Delivery Store</h4><p>Custom ordering + WhatsApp integration</p></div>
             </div>
         </div>
@@ -104,16 +160,56 @@
     </div>
 </section>
 
+    <section class="section service-depth" aria-label="Use an example to make your brief clearer">
+        <div class="container story-layout">
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>Use an example to make your brief clearer</h2>
+                    <p>Pick the project type closest to the problem you need to solve. A storefront example can help you decide which product details matter before checkout. A property listings example can help you decide whether search, filters or a map belongs in the first version, and which details visitors need to see at a glance.</p>
+                    <p>Describe what would have to change for the example to fit your business. A useful brief includes who will use the site, the action they need to complete and what you already have prepared. For a store, that might be a product spreadsheet. For a service business, it could be an enquiry form and sample project photographs.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/work-1.svg" alt="Project brief from an illustrative example: Example, Required changes, Next step." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+<section class="section faq-section" aria-labelledby="faq-heading">
+    <div class="container">
+        <h2 id="faq-heading">FAQ</h2>
+        <div class="faq-list">
+            <details>
+                <summary>Are the examples client case studies?</summary>
+                <p>The work shown here is illustrative. Use it to compare project types and describe what you want to build.</p>
+            </details>
+            <details>
+                <summary>Can we start from an example on this page?</summary>
+                <p>Yes. Mention which example is closest to your project and what you would change in the <a href="contact.html">inquiry form</a>.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container footer-grid">
         <div><a href="../index.html" class="logo"><img src="../assets/images/logo-wordmark.png" alt="Webnox Hub" /></a><p class="footer-tag">Build. Automate. Scale.</p></div>
-        <div><h5>Services</h5><a href="services.html">Web Development</a><a href="services.html">SaaS</a><a href="services.html">Automation</a><a href="services.html">Social Media</a></div>
-        <div><h5>Company</h5><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></div>
+        <div>
+            <h5>Services</h5>
+            <a href="website-development.html">Website Development</a>
+            <a href="ecommerce-development.html">Ecommerce Development</a>
+            <a href="paid-ads.html">Paid Ads Management</a>
+            <a href="saas-products.html">SaaS Products</a>
+            <a href="business-automation.html">Business Automation</a>
+        </div>
+        <div><h5>Company</h5><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+        </div>
         <div><h5>Connect</h5><a href="mailto:webnoxhub@gmail.com">webnoxhub@gmail.com</a><a href="tel:+923181245603">+92 318 124 5603</a><a href="https://wa.me/923181245603">WhatsApp</a><p class="footer-location">Karachi, Pakistan</p></div>
     </div>
     <div class="container footer-bottom"><p>© 2026 Webnox Hub. All rights reserved.</p></div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261024"></script>
+<script src="../assets/js/main.js?v=20261115-2"></script>
 </body>
 </html>

@@ -1,4 +1,38 @@
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+const cursorHalo = document.createElement('div');
+cursorHalo.className = 'cursor-halo';
+cursorHalo.setAttribute('aria-hidden', 'true');
+document.body.append(cursorHalo);
+
+let haloFrame = 0;
+let haloX = 0;
+let haloY = 0;
+const hideHalo = () => {
+    cursorHalo.classList.remove('is-visible');
+    if (haloFrame) cancelAnimationFrame(haloFrame);
+    haloFrame = 0;
+};
+window.addEventListener('pointermove', event => {
+    if (event.pointerType !== 'mouse' || !finePointer.matches || reducedMotion.matches) {
+        hideHalo();
+        return;
+    }
+    haloX = event.clientX;
+    haloY = event.clientY;
+    if (haloFrame) return;
+    haloFrame = requestAnimationFrame(() => {
+        cursorHalo.style.transform = `translate3d(${haloX}px, ${haloY}px, 0)`;
+        cursorHalo.classList.add('is-visible');
+        haloFrame = 0;
+    });
+}, { passive: true });
+document.documentElement.addEventListener('pointerleave', hideHalo);
+window.addEventListener('blur', hideHalo);
+finePointer.addEventListener('change', hideHalo);
+reducedMotion.addEventListener('change', hideHalo);
+
 /* ═══════════ LOADER ═══════════ */
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
@@ -20,7 +54,7 @@ if (hamburger && navLinks) {
         hamburger.classList.toggle('active', open);
         hamburger.setAttribute('aria-expanded', String(open));
         navLinks.classList.toggle('open', open);
-        document.body.classList.toggle('menu-open', open);
+        document.documentElement.classList.toggle('menu-open', open);
         if (restoreFocus) hamburger.focus();
     };
     hamburger.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
@@ -36,6 +70,9 @@ if (hamburger && navLinks) {
         }
     });
     mobile.addEventListener('change', () => setMenu(false));
+    window.addEventListener('pageshow', event => {
+        if (event.persisted) setMenu(false);
+    });
 }
 
 /* ═══════════ ANIMATED NETWORK CANVAS (all hero sections) ═══════════ */

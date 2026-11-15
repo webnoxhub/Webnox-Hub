@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 296" font-family="system-ui, sans-serif">
+  <defs>
+    <linearGradient id="surface" x2="100%" y2="100%"><stop stop-color="#0e1c31"/><stop offset="1" stop-color="#1a1a36"/></linearGradient>
+    <linearGradient id="accent" x2="100%" y2="100%"><stop stop-color="#94efd1"/><stop offset="1" stop-color="#8474f3"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#7187b1" stroke-opacity=".14"/></pattern>
+  </defs>
+  <rect width="520" height="296" rx="20" fill="url(#surface)"/>
+  <rect x="16" y="16" width="488" height="264" rx="15" fill="url(#grid)" stroke="#344866"/>
+  <path d="M28 78h464" stroke="#344866"/>
+  <rect x="38" y="44" width="4" height="18" rx="2" fill="url(#accent)"/>
+  <text x="53" y="58" fill="#eef6ff" font-size="19" font-weight="650">SaaS MVP release checklist</text>
+    <rect x="60" y="101" width="400" height="38" rx="8" fill="#172740" stroke="#314364"/>
+  <path d="m77 120 5 5 9-11" fill="none" stroke="#94efd1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="125" fill="#edf5ff" font-size="15">Core flow</text>
+  <rect x="60" y="150" width="400" height="38" rx="8" fill="#172740" stroke="#314364"/>
+  <path d="m77 169 5 5 9-11" fill="none" stroke="#94efd1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="174" fill="#edf5ff" font-size="15">Permissions</text>
+  <rect x="60" y="199" width="400" height="38" rx="8" fill="#172740" stroke="#314364"/>
+  <path d="m77 218 5 5 9-11" fill="none" stroke="#94efd1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="223" fill="#edf5ff" font-size="15">Feedback</text>
+</svg>

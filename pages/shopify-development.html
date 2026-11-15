@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261024" />
+<link rel="stylesheet" href="../assets/css/style.css?v=20261115-8" />
 <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon.png" />
 <noscript><style>@media(max-width:900px){.navbar{position:relative;height:auto}.nav-inner{flex-direction:column}.nav-links{position:static;height:auto;clip-path:none;visibility:visible;pointer-events:auto;padding:20px;overflow:visible}.nav-links a,.nav-links .nav-cta{opacity:1;transform:none}.hamburger{display:none}}</style></noscript>
 </head>
@@ -38,7 +38,7 @@
             <a href="process.html">Process</a>
             <a href="pricing.html">Pricing</a>
             <a href="about.html">About</a>
-            <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+            <a href="https://calendar.app.google/YQGjRgXyBe3XkkkY7" class="btn btn-primary nav-cta">Get Audit</a>
         </nav>
         <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -48,13 +48,27 @@
     <section class="page-hero">
         <canvas class="network-canvas" aria-hidden="true"></canvas>
         <div class="glow glow-1"></div>
-        <div class="container">
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="../index.html">Home</a><span aria-hidden="true">/</span>
-                <a href="services.html">Services</a>
-            </nav>
-            <h1>Shopify Development</h1>
-            <p class="page-sub">Launch or improve a Shopify store with a product catalogue shoppers can browse easily, clear product pages and a checkout setup that fits your market.</p>
+        <div class="container page-hero-layout">
+            <div class="page-hero-copy">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a><span aria-hidden="true">/</span>
+                    <a href="services.html">Services</a>
+                </nav>
+                <h1>Shopify Development</h1>
+                <p class="page-sub">Launch or improve a Shopify store with a product catalogue shoppers can browse easily, clear product pages and a checkout setup that fits your market.</p>
+            </div>
+            <figure class="page-preview page-preview--store" role="img" aria-label="An illustrative Shopify storefront with collections, variants and shipping">
+                <div class="preview-chrome" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="preview-content" aria-hidden="true">
+                    <span class="preview-kicker">Plan the store structure</span>
+                    <strong>Shopify storefront</strong>
+                    <ul class="preview-items">
+                        <li>Collections</li>
+                        <li>Variants</li>
+                        <li>Shipping</li>
+                    </ul>
+                </div>
+            </figure>
         </div>
     </section>
 
@@ -86,22 +100,57 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section service-depth" aria-label="Project details">
+        <div class="container story-layout">
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>Build the storefront around shopping decisions</h2>
+                    <p>List your key collections and the two or three things shoppers use to compare items. For apparel that might be fit, fabric and size. For a food business it might be portion, delivery area and lead time. Use a sample catalog to decide what belongs in navigation, filters and individual product descriptions.</p>
+                    <p>Theme changes can include product templates, collection layouts and mobile adjustments. Bring a store URL or theme reference and describe the behavior you are trying to improve, such as customers missing the size guide or failing to find products that are in stock.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/shopify-development-1.svg" alt="Shopify collection and theme layout: Navigation, Collection, Product." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>When to redesign or migrate a store</h2>
+                    <p>For an existing Shopify store, find out whether the issue is the theme, catalog organization or order flow before changing the design. Before a migration, review product and variant data, file attachments and the URLs customers already use. Decide which apps and integrations are still needed.</p>
+                    <p>We scope changes against a representative product and one test order, then extend the agreed template to other products. If you’re choosing a platform from scratch, the <a href="ecommerce-development.html">ecommerce development page</a> explains what to consider alongside Shopify.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/shopify-development-2.svg" alt="Shopify data migration sequence: Export, Map URLs, Test." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>Prepare the team for launch</h2>
+                    <p>Have someone on your team add a product, edit stock and check a real order notification during the launch rehearsal. Agree on who can edit the theme and who owns product updates, refunds and shipping settings.</p>
+                    <p>If you’ll drive traffic to the store as soon as it launches, run through the <a href="paid-ads-launch-checklist.html">paid ads launch checklist</a> first. Test landing on the advertised collection, adding an item and completing the action that reporting will count.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/shopify-development-3.svg" alt="Shopify team launch rehearsal: Edit product, Check stock, Test order." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq-section" aria-labelledby="faq-heading">
         <div class="container">
-            <div class="section-head"><h2>Frequently Asked Questions</h2></div>
-            <div class="values-grid">
-                <article class="value-card">
-                    <h3>Can you improve an existing Shopify store?</h3>
+            <h2 id="faq-heading">FAQ</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>Can you improve an existing Shopify store?</summary>
                     <p>Yes. Share the store link and the issues you want to fix, such as unclear navigation, hard-to-use product pages or a theme that no longer fits your brand.</p>
-                </article>
-                <article class="value-card">
-                    <h3>Which payment options can I use?</h3>
+                </details>
+                <details>
+                    <summary>Which payment options can I use?</summary>
                     <p>That depends on where your business is registered, where you sell and which providers you can use. We review those details during scoping.</p>
-                </article>
-                <article class="value-card">
-                    <h3>What should I prepare before launch?</h3>
+                </details>
+                <details>
+                    <summary>What should I prepare before launch?</summary>
                     <p>Start with your product list, photos, prices, variants, shipping zones and store policies. These details help us scope the setup and test a purchase flow.</p>
-                </article>
+                </details>
             </div>
         </div>
     </section>
@@ -127,11 +176,14 @@
             <h5>Related Services</h5>
             <a href="website-development.html">Website Development</a>
             <a href="wordpress-development.html">WordPress Development</a>
+            <a href="ecommerce-development.html">Ecommerce Development</a>
+            <a href="paid-ads-launch-checklist.html">Paid Ads Launch Checklist</a>
             <a href="services.html">All Services</a>
         </div>
         <div>
             <h5>Company</h5>
             <a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
         </div>
         <div>
             <h5>Connect</h5>
@@ -141,6 +193,6 @@
     <div class="container footer-bottom"><p>© 2026 Webnox Hub. All rights reserved.</p></div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261024"></script>
+<script src="../assets/js/main.js?v=20261115-2"></script>
 </body>
 </html>

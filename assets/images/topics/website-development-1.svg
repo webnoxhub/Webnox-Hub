@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 296" font-family="system-ui, sans-serif">
+  <defs>
+    <linearGradient id="surface" x2="100%" y2="100%"><stop stop-color="#0e1c31"/><stop offset="1" stop-color="#1a1a36"/></linearGradient>
+    <linearGradient id="accent" x2="100%" y2="100%"><stop stop-color="#67ddf6"/><stop offset="1" stop-color="#8474f3"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#7187b1" stroke-opacity=".14"/></pattern>
+  </defs>
+  <rect width="520" height="296" rx="20" fill="url(#surface)"/>
+  <rect x="16" y="16" width="488" height="264" rx="15" fill="url(#grid)" stroke="#344866"/>
+  <path d="M28 78h464" stroke="#344866"/>
+  <rect x="38" y="44" width="4" height="18" rx="2" fill="url(#accent)"/>
+  <text x="53" y="58" fill="#eef6ff" font-size="19" font-weight="650">Website project timeline</text>
+  <path d="M155 154h62m86 0h62" fill="none" stroke="#67ddf6" stroke-opacity=".55" stroke-width="2" stroke-dasharray="4 5"/>
+  <path d="m208 149 6 5-6 5m148-10 6 5-6 5" fill="none" stroke="#67ddf6" stroke-width="2"/>
+  <rect x="70" y="118" width="84" height="73" rx="14" fill="#162742" stroke="#67ddf6" stroke-opacity=".6"/>
+  <circle cx="112" cy="154" r="15" fill="#67ddf6" fill-opacity=".18"/>
+  <text x="112" y="159" fill="#eaf5ff" font-size="14" text-anchor="middle">1</text>
+  <text x="112" y="222" fill="#bbcee7" font-size="15" text-anchor="middle">Brief</text>
+  <rect x="218" y="118" width="84" height="73" rx="14" fill="#162742" stroke="#67ddf6" stroke-opacity=".6"/>
+  <circle cx="260" cy="154" r="15" fill="#67ddf6" fill-opacity=".18"/>
+  <text x="260" y="159" fill="#eaf5ff" font-size="14" text-anchor="middle">2</text>
+  <text x="260" y="222" fill="#bbcee7" font-size="15" text-anchor="middle">Design</text>
+  <rect x="366" y="118" width="84" height="73" rx="14" fill="#162742" stroke="#67ddf6" stroke-opacity=".6"/>
+  <circle cx="408" cy="154" r="15" fill="#67ddf6" fill-opacity=".18"/>
+  <text x="408" y="159" fill="#eaf5ff" font-size="14" text-anchor="middle">3</text>
+  <text x="408" y="222" fill="#bbcee7" font-size="15" text-anchor="middle">Launch</text>
+</svg>

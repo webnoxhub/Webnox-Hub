@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261024" />
+<link rel="stylesheet" href="../assets/css/style.css?v=20261115-8" />
 <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon.png" />
 <noscript><style>@media(max-width:900px){.navbar{position:relative;height:auto}.nav-inner{flex-direction:column}.nav-links{position:static;height:auto;clip-path:none;visibility:visible;pointer-events:auto;padding:20px;overflow:visible}.nav-links a,.nav-links .nav-cta{opacity:1;transform:none}.hamburger{display:none}}</style></noscript>
 </head>
@@ -38,7 +38,7 @@
             <a href="process.html">Process</a>
             <a href="pricing.html">Pricing</a>
             <a href="about.html">About</a>
-            <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+            <a href="https://calendar.app.google/YQGjRgXyBe3XkkkY7" class="btn btn-primary nav-cta">Get Audit</a>
         </nav>
         <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -48,13 +48,28 @@
     <section class="page-hero">
         <canvas class="network-canvas" aria-hidden="true"></canvas>
         <div class="glow glow-1"></div>
-        <div class="container">
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="../index.html">Home</a><span aria-hidden="true">/</span>
-                <a href="services.html">Services</a>
-            </nav>
-            <h1>WordPress Development</h1>
-            <p class="page-sub">Build a WordPress website your team can update, from service pages and articles to a WooCommerce catalogue when you need an online store.</p>
+        <div class="container page-hero-layout">
+            <div class="page-hero-copy">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a><span aria-hidden="true">/</span>
+                    <a href="services.html">Services</a>
+                </nav>
+                <h1>WordPress Development</h1>
+                <p class="page-sub">Build a WordPress website your team can update, from service pages and articles to a WooCommerce catalogue when you need an online store.</p>
+            </div>
+            <figure class="page-preview page-preview--editor" role="img" aria-label="An illustrative editor for pages, posts and media">
+                <div class="preview-chrome" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="preview-content" aria-hidden="true">
+                    <span class="preview-kicker">Content your team can update</span>
+                    <strong>WordPress editor</strong>
+                    <div class="preview-wire"><i></i><i></i><i></i></div>
+                    <ul class="preview-items">
+                        <li>Pages</li>
+                        <li>Posts</li>
+                        <li>Media</li>
+                    </ul>
+                </div>
+            </figure>
         </div>
     </section>
 
@@ -78,22 +93,57 @@
         </div>
     </section>
 
-    <section class="section section-dark">
+    <section class="section service-depth" aria-label="Project details">
+        <div class="container story-layout">
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>Make frequent edits easy</h2>
+                    <p>Decide who will update the site and what they need to edit. A small team might only change service descriptions and publish articles. A larger team may need layouts that several editors can use consistently. Build one sample page so the handover covers the actual editing experience.</p>
+                    <p>Agree which elements can be changed freely and which should use a shared block, such as a quote button or contact information. This keeps common updates manageable across the site and still lets your team write pages with their own focus.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/wordpress-development-1.svg" alt="WordPress editing layout: Page blocks, Articles, Media." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>Redesign without losing useful content</h2>
+                    <p>Inventory articles, service pages, media and forms. Confirm which content should be migrated, rewritten or retired and where old addresses should lead after launch. A staging site gives the team a chance to review navigation and test forms before the public site changes.</p>
+                    <p>If you need a store, use the <a href="ecommerce-development.html">ecommerce planning guide</a> to define checkout, shipping and product data before adding WooCommerce. If the site mostly explains your services, start with a simple set of pages and expand when the content is ready.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/wordpress-development-2.svg" alt="WordPress content migration: Inventory, Staging, Redirects." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+            <div class="depth-topic">
+                <div class="topic-copy">
+                    <h2>Plan maintenance and ownership</h2>
+                    <p>At handover, verify that the right people can sign in, update content and recover access. Decide who is responsible for hosting, backups and plugin updates. A maintenance scope can separate routine updates from new layouts or feature requests.</p>
+                    <p>For example, a professional services firm could use one service template and a separate article template. Editors can publish new topics without editing navigation or shared contact sections. Review the <a href="seo-optimization.html">SEO scope</a> if you want new pages to follow a consistent search and linking structure.</p>
+                </div>
+                <figure class="topic-visual">
+                    <img src="../assets/images/topics/wordpress-development-3.svg" alt="WordPress site ownership checklist: Editor access, Backups, Updates." width="520" height="296" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq-section" aria-labelledby="faq-heading">
         <div class="container">
-            <div class="section-head"><h2>Frequently Asked Questions</h2></div>
-            <div class="values-grid">
-                <article class="value-card">
-                    <h3>Do I need WordPress for a small site?</h3>
+            <h2 id="faq-heading">FAQ</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>Do I need WordPress for a small site?</summary>
                     <p>WordPress is useful if you regularly edit pages or publish articles. If you need a small site with occasional updates, we can discuss a simpler custom build.</p>
-                </article>
-                <article class="value-card">
-                    <h3>Can you redesign my site while keeping its content?</h3>
+                </details>
+                <details>
+                    <summary>Can you redesign my site while keeping its content?</summary>
                     <p>We can review what needs to move and plan the redesign around existing content. Share the current URL, which sections should stay and what your team wants to change.</p>
-                </article>
-                <article class="value-card">
-                    <h3>Can I edit the site after handover?</h3>
+                </details>
+                <details>
+                    <summary>Can I edit the site after handover?</summary>
                     <p>Yes. During scoping we’ll agree which pages and content your team should be able to edit and what guidance you need at handover.</p>
-                </article>
+                </details>
             </div>
         </div>
     </section>
@@ -119,11 +169,13 @@
             <h5>Related Services</h5>
             <a href="website-development.html">Website Development</a>
             <a href="shopify-development.html">Shopify Development</a>
+            <a href="ecommerce-development.html">Ecommerce Development</a>
             <a href="services.html">All Services</a>
         </div>
         <div>
             <h5>Company</h5>
             <a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
         </div>
         <div>
             <h5>Connect</h5>
@@ -133,6 +185,6 @@
     <div class="container footer-bottom"><p>© 2026 Webnox Hub. All rights reserved.</p></div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261024"></script>
+<script src="../assets/js/main.js?v=20261115-2"></script>
 </body>
 </html>
